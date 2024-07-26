@@ -53,11 +53,11 @@ export default function Footer() {
         <div className=' p-8'>
         <div className='pt-4'>
           <p className='text-base'>call</p>
-          <h5 className='font-bold text-lg'>+1408-835-0739</h5>
+          <h5 className='font-bold text-lg'><a href="tel:1408-835-073">+1408-835-0739</a></h5>
           </div>
           <div className='pt-[4rem] '>
           <p className='text-base'>Email Address</p>
-          <h5 className='font-bold text-lg'>chi@politicozen.com</h5>
+          <h5 className='font-bold text-lg'><a href="mailto:chi@politicozen.com">chi@politicozen.com</a></h5>
           </div>
           </div>
         </div>
