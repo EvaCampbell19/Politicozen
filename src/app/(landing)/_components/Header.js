@@ -22,9 +22,7 @@ const Header = () => {
   ] ;
   return (
     <nav
-      className={`relative w-full  font-medium ${
-        scrolled ? "bg-white shadow-[#888888]" : "bg-white"
-      } transition-all duration-300 shadow-[#888888] `}
+      className={`relative w-full  font-medium drop-shadow-md `}
     >
       <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-[#FFFFFF]  nav">
         <div>
