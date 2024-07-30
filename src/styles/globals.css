@@ -31,8 +31,7 @@ body {
     text-wrap: balance;
   }
 }
-
-input[type='text'] {
+.cust_class{
   width: 100%;
   border-radius: 8px;
   font-size: 16px;
@@ -42,7 +41,6 @@ input[type='text'] {
   background-repeat: no-repeat;
   padding: 15px 15px 15px 40px;
 }
-
 main {
   background-color: #fff;
 }

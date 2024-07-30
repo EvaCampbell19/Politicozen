@@ -25,12 +25,12 @@ export default function Page() {
         <div className="container mx-auto h-full w-full flex justify-center">
           <div>
             <div className="lg:w-[800px] mt-[11rem] text-center lg:text-left">
-              <p className="text-[60px] leading-[60px] font-black">Categories</p>
+              <p className="text-[60px] leading-[60px] font-black flex justify-center">Categories</p>
             </div>
             <div className="mt-[25px]">
               <form>
                 <input
-                  className="p-5 w-full rounded-lg"
+                  className="p-5 w-full rounded-lg cust_class"
                   type="text"
                   name="search"
                   placeholder="Search all artist of products"

@@ -67,7 +67,7 @@ export default function Home() {
             <div className="mt-[25px]">
               <form>
                 <input
-                  className="p-5 w-full rounded-2xl"
+                  className="p-5 w-full rounded-2xl cust_class"
                   type="text"
                   name="search"
                   placeholder="Search all artist of products"
