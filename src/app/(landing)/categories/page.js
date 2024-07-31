@@ -23,9 +23,9 @@ export default function Page() {
         className="bg-cover bg-center"
       >
         <div className="container mx-auto h-full w-full flex justify-center">
-          <div>
-            <div className="lg:w-[800px] mt-[11rem] text-center lg:text-left">
-              <p className="text-[60px] leading-[60px] font-black flex justify-center">Categories</p>
+          <div >
+            <div className="lg:w-[800px] mt-[11rem] text-center lg:text-left ">
+              <p className="md:text-[60px] text-[55px] leading-[60px] font-black flex justify-center">Categories</p>
             </div>
             <div className="mt-[25px]">
               <form>
@@ -42,9 +42,9 @@ export default function Page() {
       </div>
       <section className="most-recent pt-[160px] mt-[-450px] bg-transparent">
         <div className="flex justify-center items-center mb-[25px] relative z-[1]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 pb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-16">
             {images.map((image, index) => (
-              <div className={`card max-w-sm rounded-xl overflow-hidden shadow-lg border w-[370px] h-[400px]`}>
+              <div className={`card rounded-xl overflow-hidden shadow-lg border sm:w-[350px] sm:h-[380px]  lg:w-[370px] lg:h-[400px]`}>
               <Card key={index} imageSrc={image.src} title={image.title} />
               </div>
             ))}

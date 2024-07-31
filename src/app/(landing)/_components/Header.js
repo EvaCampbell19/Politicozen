@@ -1,30 +1,25 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  
-
   const handleNavigation = (e, section) => {
-   
+    // Add navigation logic here if needed
   };
-  
+
   const routes = [
     { name: "Home", href: "/home" },
     { name: "Categories", href: "/categories" },
     { name: "How it works", href: "/how-it-works" },
-  
     // { name: "about", href: '/about' }
-  ] ;
+  ];
+
   return (
-    <nav
-      className={`relative w-full  font-medium drop-shadow-md `}
-    >
-      <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-[#FFFFFF]  nav">
+    <nav className="relative w-full font-medium drop-shadow-md">
+      <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-[#FFFFFF] nav">
         <div>
           <h1 className="text-5xl font-signature ml-2">
             <a
@@ -38,27 +33,31 @@ const Header = () => {
           </h1>
         </div>
         <div className="flex items-center gap-4">
+          {/* Desktop Navigation Links */}
           <div className="hidden lg:flex flex-grow justify-center items-center space-x-4">
-          {routes.map(({ name, href ,index}) => (
-            <Link
-              key={index} 
-            className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 link-underline"
-              href={href}
-            >
-              {name}
-            </Link>
-          ))}
+            {routes.map(({ name, href }, index) => (
+              <Link
+                key={index}
+                className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 link-underline"
+                href={href}
+              >
+                {name}
+              </Link>
+            ))}
           </div>
           <div className="flex gap-2">
-            <button className="border  border-black rounded-full uppercase text-black p-2 w-[211px] flex justify-evenly items-center gap-2 text-[16px]">
-              How it Works{" "}
-              <Image src="./arrow.svg" alt="arrow" height={15} width={15} />
-            </button>
-            <button className=" rounded-full text-black uppercase bg-[#FFDA79] p-2 w-[142px] flex justify-evenly  items-center gap-2 text-[16px]">
-              JOIN{" "}
-              <Image src="./arrow.svg" alt="arrow" height={15} width={15} />
-            </button>
+          <button className="border border-black rounded-full uppercase text-black
+           p-2 w-full sm:w-[211px] flex justify-evenly items-center gap-2 text-sm md:text-[16px]">
+  How it Works{" "}
+  <Image src="./arrow.svg" alt="arrow" height={15} width={15} />
+</button>
+<button className="rounded-full text-black uppercase bg-[#FFDA79] p-2 w-full sm:w-[142px] flex justify-evenly items-center gap-2 text-sm md:text-[16px]">
+  JOIN{" "}
+  <Image src="./arrow.svg" alt="arrow" height={15} width={15} />
+</button>
+
           </div>
+          {/* Mobile Menu Button */}
           <div className="lg:hidden flex-grow flex justify-end">
             <button
               type="button"
@@ -91,24 +90,25 @@ const Header = () => {
               </svg>
             </button>
           </div>
-          {isOpen && (
-            <div className="absolute top-full left-0 w-full bg-white z-20 lg:hidden text-center">
-              <div className="py-2 space-y-1">
-                {["Categories", "Products", "Artists"].map((section) => (
-                  <Link
-                   key={section}
-            onClick={(e) => handleNavigation(e, section.toLowerCase())}
-            href={`/${section.toLowerCase()}`}
-                    className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 link-underline"
-                  >
-                    {section}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          )}
         </div>
       </div>
+      {/* Mobile Menu Items */}
+      {isOpen && (
+        <div className="lg:hidden absolute top-full left-0 w-full bg-white z-20 text-center">
+          <div className="py-2 space-y-1">
+            {["Categories", "Products", "Artists"].map((section) => (
+              <Link
+                key={section}
+                onClick={(e) => handleNavigation(e, section.toLowerCase())}
+                href={`/${section.toLowerCase()}`}
+                className="nav-links px-4 py-2 block cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 link-underline"
+              >
+                {section}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

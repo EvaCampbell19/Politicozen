@@ -2,6 +2,7 @@
 import Head from 'next/head';
 import Sidebar from './Sidebar';
 import Card from '@/app/components/Card';
+import Image from 'next/image';
 
 export default function Home() {
   const products = [
@@ -57,9 +58,20 @@ export default function Home() {
     
         ))}
       </div>
-
+    
+      </div>
+    
+      </section>
+      <section  className="flex p-8">
+      <div className='container  my-0 mx-auto p-14  h-[60px] justify-center flex items-center  border-t-2 border-b-2'>
+        <div className='w-full bg-[#fdfdfd] flex justify-between border rounded-lg'>
+        <button className='bg-[#FFDA79] rounded-lg flex w-[280px] m-1 h-[48px] text-white items-center p-4 gap-2 uppercase font-semibold'> <Image src="./paginationArrow.svg" alt="arrow"  height={10} width={18} /> prev post</button>
+        <button className='w-[280px] m-0 p-0 h-[56px] border-l border-r border-l-[#FFDA79] border-r-[#FFDA79]'>02/08</button>
+        <button className='bg-[#FFDA79] justify-end  rounded-lg flex w-[280px] m-1 h-[48px] text-white items-center p-4 gap-2 uppercase font-semibold'>next post <Image src="./paginationArrow.svg" alt="arrow" className='rotate-180' height={10} width={18} /></button>
+</div>
       </div>
       </section>
+     
     
     </>
   );

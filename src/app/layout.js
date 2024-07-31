@@ -19,9 +19,7 @@ export default function RootLayout({ children }) {
           <main className="">
             {children}
           </main>
-          {/* <footer className="bg-gray-800 text-white p-4 text-center"> */}
            <Footer/>
-          {/* </footer> */}
         </div>
       </body>
     </html>
