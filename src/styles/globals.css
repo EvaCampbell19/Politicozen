@@ -59,3 +59,92 @@ main {
   z-index: 0;
   border-top-left-radius: 100px;
 }
+@media screen and (max-width: 1925px) {
+  .res1 {
+   grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1145px) {
+  .res1 {
+   grid-template-columns: 1fr 1fr;
+  }
+  .res0{
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .res1 {
+   grid-template-columns: 1fr;
+  }
+  .res0{
+    margin-left: 0;
+    width:100%;
+  }
+}
+
+@media only screen and (max-width: 1925px) {
+  .ruby {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .acma {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1378px) {
+  .ruby {
+   grid-template-columns: 1fr 1fr;
+  }
+  .acma {
+    grid-template-columns: 1fr 1fr;
+  }
+  .most-recent {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .ruby {
+   grid-template-columns: 1fr 1fr;
+  }
+  .most-recent::before{
+    width: 100%;
+    margin-left: 0;
+    border-top-left-radius: 0px;
+
+  }
+  .luffy {
+    margin-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+  }
+  .acma0{
+    margin-left: 0;
+  }
+  .ruby0{
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .ruby {
+   grid-template-columns: 1fr;
+  }
+  .most-recent::before{
+    width: 100%;
+    margin-left: 0;
+    border-top-left-radius: 0px;
+
+  }
+  .ruby0{
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 1038px) {
+  .acma {
+    grid-template-columns: 1fr;
+  }
+  .acma0{
+    margin-left: 0;
+  }
+}

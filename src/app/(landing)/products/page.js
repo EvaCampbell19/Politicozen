@@ -47,10 +47,10 @@ export default function Home() {
       </div>
     </div>
   </div>
-      <section className="flex most-recent pt-[160px] mt-[-450px] bg-transparent">
-      <div className="flex  mb-[25px] relative z-[1] my-0 mx-auto">
+      <section className="most-recent pt-[160px] mt-[-450px] bg-transparent">
+      <div className="acma0 flex mb-[25px] relative z-[1] mx-auto justify-center p-[10px] ml-[11rem]">
       <Sidebar  data={sidebarData}/>
-      <div className="flex-1 p-4  pt-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  ">
+      <div className="acma p-5 pl-[3rem] pt-0 grid gap-6  ">
         {products.map((product, index) => (
             <div className={`card max-w-sm rounded-xl overflow-hidden shadow-lg border w-[270px] h-[390px]`}>
             <Card key={index} imageSrc={product?.src} title={product?.title} price={product.price}/>

@@ -15,14 +15,15 @@ export default function Page() {
       >
         <div className="container mx-auto h-full w-full flex justify-center">
           <div className="lg:w-[800px] mt-[11rem] text-center lg:text-left justify-center flex ">
-            <p className="text-[60px] leading-[60px] font-black">Categories</p>
+            <p className="text-[60px] leading-[60px] font-black">Contact
+            </p>
           </div>
         </div>
       </div>
       <section className="most-recent pt-[160px] mt-[-450px] bg-transparent pb-16">
-        <div className="flex   justify-center items-start mb-[25px] relative z-[1]">
+        <div className="luffy flex justify-center items-start pb-[25px] relative z-[1] ml-[11rem]">
           <form class="w-full container lg:w-[1180px] mb-14">
-            <div class="flex flex-wrap -mx-3 mb-6 ">
+            <div class="flex flex-wrap pb-6 ">
               <div class="w-full  md:w-1/2 px-3 mb-6 md:mb-0 ">
                 <input
                   class="appearance-none block w-full h-[70px]  text-gray-700 border  rounded-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
@@ -40,7 +41,7 @@ export default function Page() {
                 />
               </div>
             </div>
-            <div class="flex flex-wrap -mx-3 mb-6 ">
+            <div class="flex flex-wrap mb-6 ">
               <div class="w-full  md:w-1/2 px-3 mb-6 md:mb-0 ">
                 <input
                   class="appearance-none block w-full  text-gray-700 border h-[70px] rounded-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
@@ -57,7 +58,7 @@ export default function Page() {
                 />
               </div>
             </div>
-            <div class="w-full   ">
+            <div class="w-full px-3">
               <textarea
                 id="chat"
                 class="appearance-none block w-full h-[70px] text-gray-700 border border-gray-200 rounded-full pt-6 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"

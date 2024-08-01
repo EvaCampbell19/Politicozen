@@ -36,7 +36,7 @@ export default function Page() {
         <div className="container mx-auto h-full w-full flex justify-center">
           <div>
             <div className="lg:w-[800px] mt-[11rem] text-center lg:text-left">
-              <p className="text-[60px] leading-[60px] font-black justify-center flex">Categories</p>
+              <p className="text-[60px] leading-[60px] font-black justify-center flex">artists</p>
             </div>
             <div className="mt-[25px]">
               <form>
@@ -52,11 +52,11 @@ export default function Page() {
         </div>
       </div>
       <section className="most-recent pt-[160px] mt-[-450px] bg-transparent">
-        <div className="flex justify-center items-start mb-[25px] relative z-[1]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 pb-16">
+        <div className="res0 flex justify-center flex-wrap items-start pb-[25px] relative z-[1] ml-[11rem]">
+          <div className="res1 grid gap-6 pb-16">
             {artists.map((artist, index) => (
-              <div  className='lg:w-[310px] lg:h-[60px] drop-shadow-sm'>
-              <button className='rounded-full border border-[#DDDDDD]  w-full h-full '>
+              <div  className=' lg:w-[310px] lg:h-[60px] drop-shadow-sm ' >
+              <button className='res3 rounded-full border border-[#DDDDDD]  w-[16rem] h-full '>
               <div className='justify-start flex items-center px-4 gap-4'>             
                <Image src="./checkMark.svg" width={20} height={20}/> <span className='text-[#868686] font-medium text-base'>{artist.title}</span>
               </div>
@@ -71,3 +71,4 @@ export default function Page() {
     </>
   );
 }
+// grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3

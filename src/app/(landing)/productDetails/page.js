@@ -10,9 +10,9 @@ const page = () => {
   ];
   return (
     <section className='py-[160px]  px-0'>
-      <div className='flex container  m-auto justify-center '>
+      <div className='flex justify-center item-center '>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
-        <div className="relative  h-80 md:h-[570px] lg:w-[555px]">
+        <div className="relative  h-80 md:h-[570px] lg:w-[500px] ">
         <Image
               src="/product_1.png"
               alt="Product Image"
@@ -21,7 +21,7 @@ const page = () => {
               className="rounded-3xl"
             />
           </div>
-          <div className="flex flex-col lg:w-[555px] gap-4">
+          <div className="flex flex-col gap-4 lg:w-[450px]">
             <h1 className="text-3xl font-semibold">Death of Nature</h1>
             <p className="text-[16px] text-black font-medium">
               by <b>Yalda Hasheminiazhad</b>
@@ -29,8 +29,8 @@ const page = () => {
             <div className="border-b ">
               <p className="text-5xl pb-4 text-[#FFDA79] font-bold">$25.99</p>
             </div>
-            <div className="flex justify-between gap-3">
-              <div className="flex flex-col w-full gap-2">
+            <div className="flex justify-between gap-3 md:flex-col lg:flex-row">
+              <div className="flex flex-col w-auto gap-2">
                 <p className="font-semibold text-lg ">Selected Size</p>
                 <div className="flex space-x-2 rounded-3xl gap-2 w-full font-semibold">
                   <button className="rounded-full py-2  px-4 bg-[#FFDA79] text-base w-[112px] h-[50px]">
@@ -55,7 +55,7 @@ const page = () => {
             </div>
             <div className="my-[25px] bg-[#DDDDDD] h-[1px]" />
 
-            <button className="mt-6 bg-[#FFDA79] text-[#000000] font-semibold p-4 rounded-full w-full">
+            <button className="mt-6 bg-[#FFDA79] text-[#000000] font-semibold p-4 rounded-full w-auto">
               Add to Cart
             </button>
           </div>

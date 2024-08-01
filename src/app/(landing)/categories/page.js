@@ -41,8 +41,8 @@ export default function Page() {
         </div>
       </div>
       <section className="most-recent pt-[160px] mt-[-450px] bg-transparent">
-        <div className="flex justify-center items-center mb-[25px] relative z-[1]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-16">
+        <div className="ruby0 flex justify-center items-center mb-[25px] relative z-[1] ml-[11rem] flex-wrap mx-auto">
+          <div className="ruby grid gap-6 pb-16">
             {images.map((image, index) => (
               <div className={`card rounded-xl overflow-hidden shadow-lg border sm:w-[350px] sm:h-[380px]  lg:w-[370px] lg:h-[400px]`}>
               <Card key={index} imageSrc={image.src} title={image.title} />
