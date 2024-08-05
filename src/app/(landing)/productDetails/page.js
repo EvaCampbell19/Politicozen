@@ -11,7 +11,7 @@ const page = () => {
   return (
     <section className='py-[160px]  px-0'>
       <div className='flex justify-center item-center '>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
+        <div className="main grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
         <div className="relative  h-80 md:h-[570px] lg:w-[500px] ">
         <Image
               src="/product_1.png"
@@ -21,7 +21,7 @@ const page = () => {
               className="rounded-3xl"
             />
           </div>
-          <div className="flex flex-col gap-4 lg:w-[450px]">
+          <div className="flex flex-col gap-4 lg:w-[450px] p-[1rem]">
             <h1 className="text-3xl font-semibold">Death of Nature</h1>
             <p className="text-[16px] text-black font-medium">
               by <b>Yalda Hasheminiazhad</b>
@@ -29,7 +29,7 @@ const page = () => {
             <div className="border-b ">
               <p className="text-5xl pb-4 text-[#FFDA79] font-bold">$25.99</p>
             </div>
-            <div className="flex justify-between gap-3 md:flex-col lg:flex-row">
+            <div className="selectsize flex justify-between gap-3 md:flex-col lg:flex-row">
               <div className="flex flex-col w-auto gap-2">
                 <p className="font-semibold text-lg ">Selected Size</p>
                 <div className="flex space-x-2 rounded-3xl gap-2 w-full font-semibold">
@@ -64,12 +64,12 @@ const page = () => {
       <div className="pt-[160px]">
         <div className="flex justify-center items-center mb-[25px] relative z-[1] flex-col">
           <div className="flex mb-[25px]">
-            <p className="font-bold text-[60px]">Products </p>
-            <h2 className="text-[#FFDA79] font-bold text-[60px] pl-2">
+            <p className="prtext font-bold text-[60px]">Products </p>
+            <h2 className="prtext text-[#FFDA79] font-bold text-[60px] pl-2">
               Relation
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="prcard grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-[1rem]">
             {products.map((product) => (
               <>
                 <div className="border p-8 rounded-lg">

@@ -59,7 +59,35 @@ main {
   z-index: 0;
   border-top-left-radius: 100px;
 }
-@media screen and (max-width: 1925px) {
+/* Sidebar.css */
+
+/* WebKit browsers (Chrome, Safari) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar color */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Scrollbar color on hover */
+}
+
+/* Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #888 #f1f1f1; /* Scrollbar color and track color */
+}
+
+
+@media screen and (max-width: 2560px) {
   .res1 {
    grid-template-columns: 1fr 1fr 1fr;
   }
@@ -81,9 +109,26 @@ main {
     margin-left: 0;
     width:100%;
   }
+  .prtext{
+    font-size: 35px;
+  }
+  .acma0{
+    flex-direction: column;
+    align-items: center;
+  }
+  .acma{
+    padding-left: 1.5rem;
+    margin-top: 2rem;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    height: 400px;
+  }
+  .sidebar{
+    height: 390px;
+  }
 }
 
-@media only screen and (max-width: 1925px) {
+@media only screen and (max-width: 2560px) {
   .ruby {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -139,12 +184,71 @@ main {
   .ruby0{
     margin-left: 0;
   }
+    .main{
+    width: 100%;
+  }
+  .prcard{
+    grid-template-columns: 1fr 1fr;
+  }
+
 }
-@media only screen and (max-width: 1038px) {
+@media only screen and (max-width: 970px) {
   .acma {
     grid-template-columns: 1fr;
+    height: 865px;
   }
   .acma0{
     margin-left: 0;
   }
+  .main{
+    width: 40rem;
+  }
+
 }
+@media only screen and (max-width: 470px) {
+  .selectsize{
+    flex-direction: column;
+  }
+  .prcard {
+    grid-template-columns: 1fr;
+  }
+  .mrtext{
+    font-size: 15px;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+  }
+  .uploadtext {
+    font-size: 35px;
+  }
+  .navbtn{
+    font-size: 10px;
+    height: 40px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .paginationtext{
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .lower{
+    height: 45px;
+    padding: 8px;
+  }
+  .acma {
+    height: 400px;
+  }
+  .navbtn{
+    font-size: 10px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .paginationtext{
+    font-size: 11px;
+    width: 500px;
+  }
+}
+

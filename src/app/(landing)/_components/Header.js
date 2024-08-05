@@ -11,10 +11,9 @@ const Header = () => {
   };
 
   const routes = [
-    { name: "Home", href: "/home" },
+    { name: "Home", href: "/" },
     { name: "Categories", href: "/categories" },
-    { name: "How it works", href: "/how-it-works" },
-    // { name: "about", href: '/about' }
+    { name: "Artists", href: "/artists" },
   ];
 
   return (
@@ -46,16 +45,17 @@ const Header = () => {
             ))}
           </div>
           <div className="flex gap-2">
-          <button className="border border-black rounded-full uppercase text-black
-           p-2 w-full sm:w-[211px] flex justify-evenly items-center gap-2 text-sm md:text-[16px]">
-  How it Works{" "}
-  <Image src="./arrow.svg" alt="arrow" height={15} width={15} />
-</button>
-<button className="rounded-full text-black uppercase bg-[#FFDA79] p-2 w-full sm:w-[142px] flex justify-evenly items-center gap-2 text-sm md:text-[16px]">
-  JOIN{" "}
-  <Image src="./arrow.svg" alt="arrow" height={15} width={15} />
-</button>
-
+            <button
+              className="navbtn border border-black rounded-full uppercase text-black
+           p-2 w-full sm:w-[211px] flex justify-evenly items-center gap-2 text-sm md:text-[16px]"
+            >
+              How it Works{" "}
+              <Image src="./arrow.svg" alt="arrow" height={15} width={15} />
+            </button>
+            <button className="navbtn rounded-full text-black uppercase bg-[#FFDA79] p-2 w-full sm:w-[142px] flex justify-evenly items-center gap-2 text-sm md:text-[16px]">
+              JOIN{" "}
+              <Image src="./arrow.svg" alt="arrow" height={15} width={15} />
+            </button>
           </div>
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex-grow flex justify-end">

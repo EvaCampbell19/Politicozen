@@ -1,9 +1,10 @@
 'use client'
 import React, { useState } from 'react';
+// import './Sidebar.css'; // Import the CSS file
 
 const Sidebar = ({ data }) => {
   return (
-    <div className="w-64 p-4 bg-gray-100 rounded-lg max-h-[865px] overflow-auto">
+    <div className="sidebar w-64 p-4 bg-gray-100 rounded-lg h-[865px] overflow-y-auto custom-scrollbar">
       <Section title="Product Type" items={data.productTypes} />
       <Section title="Categories" items={data.categories} />
       <Section title="Artist" items={data.artists} />
@@ -30,7 +31,7 @@ const Section = ({ title, items }) => {
           <li key={index} className="flex items-center text-[#636363] text-base">
             <input
               type="checkbox"
-              className="form-checkbox  text-[#636363] rounded bg-[#636363] checked:bg-[#636363] checked:border-transparent"
+              className="form-checkbox text-[#636363] rounded bg-[#636363] checked:bg-[#636363] checked:border-transparent"
             />
             <span className="ml-2">{item}</span>
           </li>

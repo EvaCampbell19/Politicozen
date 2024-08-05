@@ -46,7 +46,7 @@ style={{
     backgroundPosition: 'center',
     height: '1210px', // Adjusted height to be dynamic
     minHeight: '1210px',
-    width: '100%',
+    width: 'auto',
   }}
   className="py-12" // Added padding for mobile spacing
 >
@@ -82,9 +82,9 @@ style={{
 </div>
 
 <section className="most-recent pt-[160px] mt-[-250px] bg-transparent">
-        <div className="flex justify-center items-center mb-[25px] relative z-[1]">
-          <p className="font-bold lg:text-[60px]">Most Recent </p>
-          <h2 className="text-[#FFDA79] font-bold text-[60px] pl-2">Uploads</h2>
+        <div className=" flex justify-center items-center mb-[25px] relative z-[1]">
+          <p className="mrtext font-bold lg:text-[60px]">Most Recent </p>
+          <h2 className="uploadtext text-[#FFDA79] font-bold text-[60px] pl-2">Uploads</h2>
         </div>
       </section>
 

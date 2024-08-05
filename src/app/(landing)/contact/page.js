@@ -15,7 +15,7 @@ export default function Page() {
       >
         <div className="container mx-auto h-full w-full flex justify-center">
           <div className="lg:w-[800px] mt-[11rem] text-center lg:text-left justify-center flex ">
-            <p className="text-[60px] leading-[60px] font-black">Contact
+            <p className="title text-[60px] leading-[60px] font-black">Contact
             </p>
           </div>
         </div>
