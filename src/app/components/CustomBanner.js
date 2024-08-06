@@ -15,10 +15,12 @@ const Custom = ({onselect,handleChange,search,header}) => {
           <div>
             <div className="lg:w-[800px] mt-[11rem] text-center lg:text-left">
               <p className="title text-[60px] leading-[60px] font-black flex justify-center ">
-                {header}
+                {header&& header}
               </p>
             </div>
-            <div className="mt-[25px]">
+            {
+              search ? 
+              <div className="mt-[25px]">
             <form>
                 <div className="relative">
                   <input
@@ -27,10 +29,10 @@ const Custom = ({onselect,handleChange,search,header}) => {
                     name="search"
                     placeholder="Search all artist of products"
                     value={search}
-                    onChange={handleChange}
+                    onChange={handleChange && handleChange}
                   />
                   {search !== "" && (
-                    <div  onClick={onselect}  className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer">
+                    <div  onClick={onselect && onselect}  className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
 </svg></div>
@@ -40,6 +42,9 @@ const Custom = ({onselect,handleChange,search,header}) => {
                 </div>
               </form>
             </div>
+            :''
+            }
+            
           </div>
         </div>
       </div>

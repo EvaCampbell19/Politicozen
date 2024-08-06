@@ -1,25 +1,11 @@
 import Card from "@/app/components/Card";
 import Image from "next/image";
 import React from "react";
-
+import Custom from "@/app/components/CustomBanner";
 export default function Page() {
   return (
     <>
-      <div
-        style={{
-          backgroundImage: `url('./Banner.png')`,
-          height: "960px",
-          width: "100%",
-        }}
-        className="bg-cover bg-center"
-      >
-        <div className="container mx-auto h-full w-full flex justify-center">
-          <div className="lg:w-[800px] mt-[11rem] text-center lg:text-left justify-center flex ">
-            <p className="title text-[60px] leading-[60px] font-black">Contact
-            </p>
-          </div>
-        </div>
-      </div>
+      <Custom header="Categories"/>
       <section className="most-recent pt-[160px] mt-[-450px] bg-transparent pb-16">
         <div className="luffy flex justify-center items-start pb-[25px] relative z-[1] ml-[11rem]">
           <form class="w-full container lg:w-[1180px] mb-14">
