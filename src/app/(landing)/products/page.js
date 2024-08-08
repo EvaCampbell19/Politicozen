@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Custom from "@/app/components/CustomBanner";
 
-const ITEMS_PER_PAGE = 5;
+const ITEMS_PER_PAGE = 10;
 
 export default function Home() {
   const products = [
@@ -130,7 +130,7 @@ export default function Home() {
         <div className="lower container my-0 mx-auto p-14 h-[60px] justify-center flex items-center border-t-2 border-b-2">
           <div className="w-full bg-[#fdfdfd] flex justify-between border rounded-lg">
             <button
-              className="paginationtext bg-[#FFDA79] rounded-lg flex w-[280px] m-1 h-[48px] text-white items-center p-4 gap-2 uppercase font-semibold"
+              className="text-[11px] w-[400px] p-2 bg-[#FFDA79] rounded-lg flex xl:w-[280px] m-1 xl:h-[48px] text-white items-center xl:p-4 gap-2 uppercase font-semibold"
               onClick={handlePrev}
               disabled={currentPage === 1}
             >
@@ -149,7 +149,7 @@ export default function Home() {
               {`${currentPage}/${search == "" ? totalPages : filteredtotalPages }`}
             </button>
             <button
-              className="paginationtext bg-[#FFDA79] justify-end rounded-lg flex w-[280px] m-1 h-[48px] text-white items-center p-4 gap-2 uppercase font-semibold"
+              className="text-[11px] w-[400px] p-2 bg-[#FFDA79] justify-end rounded-lg flex xl:w-[280px] m-1 xl:h-[48px] text-white items-center xl:p-4 gap-2 uppercase font-semibold"
               onClick={handleNext}
               disabled={currentPage === (search == "" ? totalPages : filteredtotalPages) }
             >

@@ -5,7 +5,7 @@ import Custom from "@/app/components/CustomBanner";
 export default function Page() {
   return (
     <>
-      <Custom header="Categories"/>
+      <Custom header="Contact"/>
       <section className="most-recent pt-[160px] mt-[-450px] bg-transparent pb-16">
         <div className="luffy flex justify-center items-start pb-[25px] relative z-[1] ml-[11rem]">
           <form class="w-full container lg:w-[1180px] mb-14">
@@ -53,7 +53,7 @@ export default function Page() {
             </div>
 
             <div className="flex justify-center pt-8">
-              <button className=" rounded-full text-black uppercase bg-[#FFDA79] p-2 w-[209px] h-[60px] flex justify-center font-bold items-center gap-2 text-[16px]">
+              <button className=" rounded-full text-black uppercase shadow-xl shadow-slate-300 bg-[#FFDA79] p-4 flex justify-center font-bold items-center gap-2 text-[11px] md:text-[14px] lg:text-[14px]">
                 Send Message{" "}
                 <Image src="./arrow.svg" alt="arrow" height={15} width={15} />
               </button>

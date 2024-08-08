@@ -1,19 +1,19 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 const page = () => {
   const products = [
-    { id: 1, name: 'Learn', image: '/product_2.png' },
-    { id: 2, name: 'Gadget', image: '/product_3.png' },
-    { id: 3, name: 'Cry', image: '/product_4.png' },
-    { id: 4, name: 'Death & Life', image: '/product_5.png' },
+    { id: 1, name: "Learn", image: "/product_2.png" },
+    { id: 2, name: "Gadget", image: "/product_3.png" },
+    { id: 3, name: "Cry", image: "/product_4.png" },
+    { id: 4, name: "Death & Life", image: "/product_5.png" },
   ];
   return (
-    <section className='py-[160px]  px-0'>
-      <div className='flex justify-center item-center '>
-        <div className="main grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
-        <div className="relative  h-80 md:h-[570px] lg:w-[500px] ">
-        <Image
+    <section className="py-[160px]  px-0">
+      <div className="flex justify-center item-center ">
+        <div className="bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
+          <div className="relative  h-80 md:h-[570px] lg:w-[500px] ">
+            <Image
               src="/product_1.png"
               alt="Product Image"
               layout="fill"
@@ -33,10 +33,10 @@ const page = () => {
               <div className="flex flex-col w-auto gap-2">
                 <p className="font-semibold text-lg ">Selected Size</p>
                 <div className="flex space-x-2 rounded-3xl gap-2 w-full font-semibold">
-                  <button className="rounded-full py-2  px-4 bg-[#FFDA79] text-base w-[112px] h-[50px]">
+                  <button className="rounded-full py-2  bg-[#FFDA79] text-base w-[100px] h-[50px] shadow-[15px_10px_20px_-2px] shadow-slate-300">
                     17x25.5"
                   </button>
-                  <button className="rounded-full py-2  px-4 border text-base  w-[112px] h-[50px] font-medium text-[#636363] border-[#636363]">
+                  <button className="rounded-full py-2 border text-base  w-[100px] h-[50px] font-medium text-[#636363] border-[#636363]">
                     24x36"
                   </button>
                 </div>
@@ -44,10 +44,10 @@ const page = () => {
               <div className="flex flex-col w-full gap-2">
                 <p className="font-semibold text-lg ">Select</p>
                 <div className="flex space-x-2 gap-2">
-                  <button className="rounded-full p-4 bg-[#FFDA79] text-base font-semibold">
+                  <button className="rounded-full py-2  w-[100px] h-[50px] bg-[#FFDA79] text-base font-semibold shadow-[15px_10px_20px_-2px] shadow-slate-300">
                     Poster
                   </button>
-                  <button className="rounded-full text-base text-[#636363] p-4 border font-medium border-[#636363]">
+                  <button className="rounded-full py-2  w-[100px] h-[50px] text-base text-[#636363] border font-medium border-[#636363]">
                     Canvas
                   </button>
                 </div>
@@ -55,8 +55,9 @@ const page = () => {
             </div>
             <div className="my-[25px] bg-[#DDDDDD] h-[1px]" />
 
-            <button className="mt-6 bg-[#FFDA79] text-[#000000] font-semibold p-4 rounded-full w-auto">
-              Add to Cart
+            <button className="flex justify-between items-center mt-6 bg-[#FFDA79] text-[#000000] font-semibold p-4 rounded-full w-auto shadow-[15px_10px_20px_-2px] shadow-slate-300">
+              <span className="flex-grow">Add to Cart</span>
+              <Image src="./arrow.svg" alt="arrow" height={15} width={15} />
             </button>
           </div>
         </div>

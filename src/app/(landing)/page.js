@@ -46,31 +46,31 @@ style={{
     backgroundPosition: 'center',
     height: '1210px', // Adjusted height to be dynamic
     minHeight: '1210px',
-    width: 'auto',
+    width: '100%',
   }}
   className="py-12" // Added padding for mobile spacing
 >
-  <div className="container mx-auto h-full w-full flex flex-col md:flex-row justify-center md:justify-start items-center px-4 md:px-6">
-    <div className="text-center md:text-left">
-      <div className="bg-[#FFDA79] p-4 rounded-full mb-4">
-        <div className="font-bold text-lg md:text-xl">
+  <div className="container mx-auto h-full w-full flex flex-col md:flex-row justify-center md:justify-start items-center md:px-6">
+    <div className="text-left xl:pl-[5rem]">
+      <div className="bg-[#FFDA79] inline-block p-4 rounded-full">
+        <div className="font-bold text-[0.6rem] sm:text-[0.7rem] md:text-[0.8rem] lg:text-[1rem]">
           OVER 100 ARTISTS ALREADY EARNING!
         </div>
       </div>
       <div className="my-6">
-        <p className="text-4xl md:text-5xl lg:text-6xl font-black font-bold  leading-tight">
+        <p className="text-3xl md:text-5xl lg:text-6xl font-black font-bold  leading-tight">
           Cartooning Just <br /> Got a lot Cooler <br /> (And Lucrative)!
         </p>
       </div>
       <div>
-        <p className="text-xl md:text-2xl text-[#636363]">
+        <p className="text-15px md:text-2xl lg:text-3xl text-[#636363]">
           Transform your art into earnings
         </p>
       </div>
       <div className="mt-6">
-        <form>
+        <form className=''>
           <input
-            className="p-4 w-full md:w-[400px] rounded-2xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#FFDA79] transition duration-300"
+            className="p-4 w-full lg:w-[500px] md:w-[400px] text-12px md:text-15px lg:text-xl rounded-2xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#FFDA79] transition duration-300"
             type="text"
             name="search"
             placeholder="Search all artists or products"
@@ -82,15 +82,15 @@ style={{
 </div>
 
 <section className="most-recent pt-[160px] mt-[-250px] bg-transparent">
-        <div className=" flex justify-center items-center mb-[25px] relative z-[1]">
-          <p className="mrtext font-bold lg:text-[60px]">Most Recent </p>
-          <h2 className="uploadtext text-[#FFDA79] font-bold text-[60px] pl-2">Uploads</h2>
+        <div className=" flex justify-center items-center mb-[25px] relative z-[1] xl:pl-[10rem]">
+          <p className="font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl">Most Recent </p>
+          <h2 className="text-[#FFDA79] font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl pl-4">Uploads</h2>
         </div>
       </section>
 
       <section className="bg-white relative">
-        <div className="flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="ruby0 flex justify-center items-center mb-[25px] relative z-[1] ml-[11rem] flex-wrap mx-auto">
+          <div className="ruby grid pb-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {images.map((image, index) => (
               <div className={`card max-w-sm rounded-xl overflow-hidden shadow-lg border w-[270px] h-[390px]`}>
               <Card
@@ -111,7 +111,7 @@ style={{
             <span className="text-[#FFDA79] pl-3">on politicozen</span>
           </div>
           <div className="flex justify-center items-center">
-            <div className="lg:text-[160px] md:text-[120px] sm:text-[50px] font-black text-[#1A2445] opacity-[0.05] leading-[150px]">
+            <div className="lg:text-[150px] md:text-[120px] sm:text-[50px] font-black text-[#1A2445] opacity-[0.05] leading-[150px]">
               Testimonials
             </div>
           </div>
@@ -126,7 +126,7 @@ style={{
           {item.discriptation}
         </div>
         <div className="flex items-center">
-          <div className="mr-4">
+          <div className="">
             <img src={item.image} alt="alt" className="h-12 w-12 rounded-full" />
           </div>
           <div>

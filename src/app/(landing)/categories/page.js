@@ -34,11 +34,11 @@ export default function Page() {
      <Custom onselect={handleClick} handleChange={handleChange} search={search} header="Categories"/>
       <section className="most-recent pt-[160px] mt-[-450px] bg-transparent">
         <div className="ruby0 flex justify-center items-center mb-[25px] relative z-[1] ml-[11rem] flex-wrap mx-auto">
-          <div className="ruby grid gap-6 pb-16">
+          <div className="ruby grid gap-6 pb-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
             {search == ""
               ? images.map((image, index) => (
                   <div
-                    className={`card rounded-xl overflow-hidden shadow-lg border sm:w-[350px] sm:h-[380px]  lg:w-[370px] lg:h-[400px]`}
+                    className={`card rounded-xl overflow-hidden shadow-lg border w-[250px] sm:w-[250px] sm:h-[380px] md:w-[350px]  lg:w-[350px] lg:h-[400px]`}
                   >
                     <Card
                       key={index}

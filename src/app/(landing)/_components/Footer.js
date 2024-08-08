@@ -11,12 +11,12 @@ export default function Footer() {
         { name: "FAQ", href: "/faq" },
       ];
   return (
-    <div className="  pb-0 bg-black  text-white">
+    <div className="  pb-0  bg-black  text-white">
     <div className=' container mx-auto'>
     <div
         class="container mx-auto  md:block lg:grid gird-cols-1 grid  md:grid-cols-3 ">
         <div class="md:mb-6 md:ms-auto  col-span-2 lg:ms-0 border-gray-400 border-r  ">
-          <p className='py-10 '>
+          <p className='py-10 pl-6 sm:pl-5 lg:pl-4'>
           <Image src="./LogoWhite.svg" alt="logo" height={80} width={69} />
           </p>
           <div className="w-full p-4 border-b border-t border-gray-400">
@@ -25,7 +25,7 @@ export default function Footer() {
                         <a href="https://pagedone.io/" className="flex  "></a>
                         <ul className="items-cente justify-center gap-14 text-center text-lg transition-all duration-500 sm:flex lg:gap-10 xl:gap-14">
                         {navLinks.map((link) => (
-                  <li key={link.href} className="my-2 md:my-0">
+                  <li key={link.href} className="my-2 md:my-0 text-left">
                     <Link href={link.href} className="text-white hover:text-gray-400">
                       {link.name}
                     </Link>
@@ -40,7 +40,7 @@ export default function Footer() {
 
         <div class="relative md:mb-6    border-gray-400 border-b" >
         <div className=' p-8 '>
-        <div className='pt-4'>
+        <div className='pt-0'>
           <p className='text-base'>call</p>
           <h5 className='font-bold text-lg'><a href="tel:1408-835-073">+1408-835-0739</a></h5>
           </div>
@@ -56,11 +56,11 @@ export default function Footer() {
       <div className="container w-full py-4">
                 <div className="mx-auto ">
                     <div className="">
-                        <div className="flex flex-col items-center justify-center lg:flex-row lg:justify-between">
+                        <div className="flex flex-col pl-4 items-center justify-center lg:flex-row lg:justify-between">
                             <span className="text-sm text-gray-500 ">
-                            Copyright © 2024 Politicozen. All Rights Reserved.
+                            Copyright © 2024 <span className='text-[#ffda79]'>Politicozen.</span> All Rights Reserved.
                             </span>
-                            <div className="mt-4 flex space-x-4 sm:justify-center lg:mt-0 ">
+                            <div className="mt-4 pr-2 flex space-x-4 sm:justify-center lg:mt-0 ">
                                 <a
                                     href="javascript:;"
                                     className=" items-centerhover:bg-gray-900 flex justify-center duration-500"
