@@ -65,12 +65,12 @@ const page = () => {
       <div className="pt-[160px]">
         <div className="flex justify-center items-center mb-[25px] relative z-[1] flex-col">
           <div className="flex mb-[25px]">
-            <p className="prtext font-bold text-[60px]">Products </p>
-            <h2 className="prtext text-[#FFDA79] font-bold text-[60px] pl-2">
+            <p className="xs:text-[35px] md:text-[60px] font-bold text-[60px]">Products </p>
+            <h2 className="xs:text-[35px] md:text-[60px] text-[#FFDA79] font-bold text-[60px] pl-2">
               Relation
             </h2>
           </div>
-          <div className="prcard grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-[1rem]">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-[1rem]">
             {products.map((product) => (
               <>
                 <div className="border p-8 rounded-lg">

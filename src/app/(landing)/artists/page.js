@@ -44,7 +44,7 @@ export default function Page() {
       <Custom onselect={handleClick} handleChange={handleChange} search={search} header="Artists"/>
       <section className="most-recent pt-[160px] mt-[-450px] bg-transparent">
         <div className="res0 flex justify-center flex-wrap items-start pb-[25px] relative z-[1] ml-[11rem]">
-          <div className="res1 grid gap-6 pb-16">
+          <div className="res1 lg:grid-cols-3 grid gap-6 pb-16">
             {search == ""
               ? artists.map((artist, index) => (
                   <div className=" lg:w-[310px] lg:h-[60px] drop-shadow-sm ">

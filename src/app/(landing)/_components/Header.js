@@ -46,13 +46,13 @@ const Header = () => {
           </div>
           <div className="flex gap-2">
             <button
-              className="navbtn border border-black rounded-full uppercase text-black
+              className="xs:text-[10px] xs:h-[40px] border border-black rounded-full uppercase text-black
            p-2 w-full sm:w-[211px] flex justify-evenly items-center gap-2 text-sm md:text-[16px]"
             >
               How it Works{" "}
               <Image src="./arrow.svg" alt="arrow" height={15} width={15} />
             </button>
-            <button className="navbtn rounded-full text-black uppercase bg-[#FFDA79] p-2 w-full sm:w-[142px] flex justify-evenly items-center gap-2 text-sm md:text-[16px] shadow-[10px_10px_20px_-5px] shadow-slate-300">
+            <button className="xs:text-[10px] xs:h-[40px] rounded-full text-black uppercase bg-[#FFDA79] p-2 w-full sm:w-[142px] flex justify-evenly items-center gap-2 text-sm md:text-[16px] shadow-[10px_10px_20px_-5px] shadow-slate-300">
               JOIN{" "}
               <Image src="./arrow.svg" alt="arrow" height={15} width={15} />
             </button>

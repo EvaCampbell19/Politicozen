@@ -41,6 +41,10 @@ body {
   background-repeat: no-repeat;
   padding: 15px 15px 15px 40px;
 }
+/* main {
+  background-color: #fff;
+} */
+
 .most-recent {
   position: relative;
 }
@@ -84,55 +88,10 @@ body {
 
 
 @media screen and (max-width: 2560px) {
-  .res1 {
-   grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-@media screen and (max-width: 1145px) {
-  .res1 {
-   grid-template-columns: 1fr 1fr;
-  }
-  .res0{
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .res1 {
-   grid-template-columns: 1fr;
-  }
-  .res0{
-    margin-left: 0;
-    width:100%;
-  }
-  .prtext{
-    font-size: 35px;
-  }
-  .acma0{
-    flex-direction: column;
-    align-items: center;
-  }
-  .acma{
-    padding-left: 1.5rem;
-    margin-top: 2rem;
-    grid-template-columns: 1fr 1fr;
-    width: auto;
-    height: 400px;
-  }
-  .sidebar{
-    height: 390px;
-  }
-}
-
-@media only screen and (max-width: 2560px) {
-  .ruby {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
   .acma {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
 @media screen and (max-width: 1378px) {
   .ruby {
    grid-template-columns: 1fr 1fr;
@@ -152,13 +111,11 @@ body {
     width: 100%;
     margin-left: 0;
     border-top-left-radius: 0px;
-
   }
   .luffy {
     margin-left: 0;
     padding-left: 1rem;
     padding-right: 1rem;
-
   }
   .acma0{
     margin-left: 0;
@@ -166,27 +123,12 @@ body {
   .ruby0{
     margin-left: 0;
   }
-}
-@media only screen and (max-width: 770px) {
-  .ruby {
-   grid-template-columns: 1fr;
-  }
-  .most-recent::before{
-    width: 100%;
-    margin-left: 0;
-    border-top-left-radius: 0px;
-
-  }
-  .ruby0{
-    margin-left: 0;
-  }
-    .main{
-    width: 100%;
-  }
-  .prcard{
+  .res1 {
     grid-template-columns: 1fr 1fr;
-  }
-
+   }
+   .res0{
+     margin-left: 0;
+   }
 }
 @media only screen and (max-width: 970px) {
   .acma {
@@ -199,37 +141,58 @@ body {
   .main{
     width: 40rem;
   }
-
+}
+@media only screen and (max-width: 770px) {
+  .ruby {
+   grid-template-columns: 1fr;
+  }
+  .most-recent::before{
+    width: 100%;
+    margin-left: 0;
+    border-top-left-radius: 0px;
+  }
+  .ruby0{
+    margin-left: 0;
+  }
+  .main{
+    width: 100%;
+  }
+  .prcard{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 650px) {
+  .res1 {
+   grid-template-columns: 1fr;
+  }
+  .res0{
+    margin-left: 0;
+    width:100%;
+  }
+  .acma0{
+    flex-direction: column;
+    align-items: center;
+  }
+  .acma{
+    padding-left: 1.5rem;
+    margin-top: 2rem;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    height: 400px;
+  }
+  .sidebar{
+    height: 390px;
+  }
 }
 @media only screen and (max-width: 470px) {
   .selectsize{
     flex-direction: column;
   }
-  .prcard {
-    grid-template-columns: 1fr;
-  }
-
-  .navbtn{
-    font-size: 10px;
-    height: 40px;
-  }
-  .title {
-    font-size: 35px;
-  }
 }
 @media only screen and (max-width: 320px) {
-  .lower{
-    height: 45px;
-    padding: 8px;
-  }
   .acma {
     height: 400px;
   }
-  .navbtn{
-    font-size: 10px;
-    height: 40px;
-  }
-
 }
 
 

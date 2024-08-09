@@ -127,7 +127,7 @@ export default function Home() {
         </div>
       </section>
       <section className="flex p-8">
-        <div className="lower container my-0 mx-auto p-14 h-[60px] justify-center flex items-center border-t-2 border-b-2">
+        <div className=" xs:h-[45px] xs:p-[8px] container my-0 mx-auto p-14 h-[60px] justify-center flex items-center border-t-2 border-b-2">
           <div className="w-full bg-[#fdfdfd] flex justify-between border rounded-lg">
             <button
               className="text-[11px] w-[400px] p-2 bg-[#FFDA79] rounded-lg flex xl:w-[280px] m-1 xl:h-[48px] text-white items-center xl:p-4 gap-2 uppercase font-semibold"

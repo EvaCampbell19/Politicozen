@@ -14,7 +14,7 @@ const Custom = ({ onselect, handleChange, search, header }) => {
       <div className="container mx-auto h-full w-full flex justify-center">
         <div>
           <div className="lg:w-[800px] mt-[11rem] text-center lg:text-left">
-            <p className="title text-[60px] leading-[60px] font-black flex justify-center ">
+            <p className="xs:text-[35px] md:text-[60px] leading-[60px] font-black flex justify-center ">
               {header && header}
             </p>
           </div>
